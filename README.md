@@ -1,26 +1,73 @@
 # airbnb-clone-project
 
-👥 Team Roles
-🧠 Project Manager (PM)
-Responsibility: Oversees the project's overall planning and execution. Manages timelines, resources, and communication between stakeholders. Ensures that the project stays on track and within budget.
+## 👥 Team Roles
 
-🖥 Backend Developer
-Responsibility: Builds and maintains the server-side logic, databases, and APIs. Ensures data processing and business logic are executed correctly.
+In this project, each member plays a key role in ensuring the success of the development process. Below is a brief description of each role and their responsibilities:
 
-🌐 Frontend Developer
-Responsibility: Implements the user interface and ensures a smooth user experience using technologies like HTML, CSS, and JavaScript frameworks (e.g., React, Angular).
+---
 
-🗄 Database Administrator (DBA)
-Responsibility: Designs and manages the database systems. Handles data integrity, backups, performance tuning, and security of the database.
+### 🧠 **Project Manager (PM)**
+Responsible for the overall coordination and delivery of the project.  
+- Plans and monitors project progress.  
+- Manages team communication and resources.  
+- Ensures deadlines and budgets are met.
 
-🧪 QA Engineer (Tester)
-Responsibility: Ensures the software meets quality standards through testing. Writes and runs test cases, identifies bugs, and verifies fixes.
+---
 
-📦 DevOps Engineer
-Responsibility: Manages CI/CD pipelines, automates deployment, and monitors infrastructure to ensure scalability and reliability of the software.
+### 🖥 **Backend Developer**
+Expert in server-side logic and application architecture.  
+- Builds and maintains APIs and services.  
+- Manages database integration and business logic.  
+- Optimizes server performance and reliability.
 
-🎨 UI/UX Designer
-Responsibility: Creates wireframes, mockups, and the visual design of the application. Focuses on usability and user experience.
+---
 
-🔐 Security Specialist
-Responsibility: Ensures that the software is secure. Performs vulnerability assessments and implements security best practices.
+### 🌐 **Frontend Developer**
+Responsible for the user-facing part of the application.  
+- Translates designs into functional UI using HTML, CSS, and JavaScript.  
+- Ensures a responsive and seamless user experience.  
+- Integrates frontend with backend APIs.
+
+---
+
+### 🗄 **Database Administrator (DBA)**
+Maintains the integrity and performance of the database.  
+- Designs and manages database structures.  
+- Handles backups, security, and performance tuning.  
+- Ensures data consistency and availability.
+
+---
+
+### 🧪 **QA Engineer (Tester)**
+Ensures the quality and functionality of the application.  
+- Writes and executes manual and automated tests.  
+- Identifies bugs and validates fixes.  
+- Verifies that the software meets requirements.
+
+---
+
+### 📦 **DevOps Engineer**
+Responsible for development operations and deployment automation.  
+- Sets up CI/CD pipelines.  
+- Automates deployments and monitors infrastructure.  
+- Ensures scalability, stability, and uptime.
+
+---
+
+### 🎨 **UI/UX Designer**
+Creates intuitive and appealing interfaces.  
+- Designs wireframes, mockups, and prototypes.  
+- Enhances the overall user experience.  
+- Collaborates closely with frontend developers.
+
+---
+
+### 🔐 **Security Specialist**
+Focuses on protecting the application from vulnerabilities.  
+- Conducts security audits and penetration tests.  
+- Implements security best practices and protocols.  
+- Educates the team on secure development.
+
+---
+
+💡 *Every role is interconnected. Clear communication and collaboration between team members are essential to delivering a high-quality product.*
