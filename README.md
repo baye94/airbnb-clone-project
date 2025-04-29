@@ -71,3 +71,76 @@ Focuses on protecting the application from vulnerabilities.
 ---
 
 💡 *Every role is interconnected. Clear communication and collaboration between team members are essential to delivering a high-quality product.*
+
+## 🛠️ Technology Stack
+
+This project is built using a modern and efficient technology stack. Each component plays a specific role in delivering a robust, scalable, and maintainable application.
+
+---
+
+### 🐍 **Django**
+A high-level Python web framework used for rapid development.  
+- Handles server-side logic and routing.  
+- Manages user authentication and admin dashboard.  
+- Supports building RESTful APIs through Django REST Framework.
+
+---
+
+### 🐘 **PostgreSQL**
+A powerful, open-source relational database system.  
+- Stores structured data with strong support for complex queries.  
+- Ensures data consistency, integrity, and security.  
+- Seamlessly integrates with Django ORM.
+
+---
+
+### 🔍 **GraphQL**
+A flexible query language for APIs.  
+- Allows clients to request exactly the data they need.  
+- Reduces over-fetching and under-fetching of data.  
+- Used as an alternative or in addition to REST APIs.
+
+---
+
+### 🎨 **HTML5, CSS3, JavaScript**
+Core web technologies for the frontend.  
+- HTML5 structures content.  
+- CSS3 styles the layout and design.  
+- JavaScript adds interactivity to web pages.
+
+---
+
+### ⚛️ **React (Optional/If Used)**
+A popular JavaScript library for building user interfaces.  
+- Enables building reusable UI components.  
+- Facilitates fast rendering with the virtual DOM.  
+- Works seamlessly with GraphQL for frontend data fetching.
+
+---
+
+### 🧪 **Pytest / UnitTest**
+Testing frameworks used to ensure code quality and reliability.  
+- Automate unit and integration tests.  
+- Identify bugs early in development.  
+- Maintain software stability over time.
+
+---
+
+### 🐳 **Docker**
+A containerization platform.  
+- Packages the application with all dependencies.  
+- Ensures consistency across development and production environments.  
+- Simplifies deployment and scalability.
+
+---
+
+### 🔁 **Git & GitHub**
+Version control and collaboration tools.  
+- Tracks code changes over time.  
+- Enables team collaboration via branches and pull requests.  
+- Hosts the project's source code repository.
+
+---
+
+💡 *This tech stack is designed to be modular, scalable, and developer-friendly, ensuring smooth development and future maintainability.*
+
