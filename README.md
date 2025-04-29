@@ -1,6 +1,6 @@
 # airbnb-clone-project
 
-## 👥 Team Roles
+## 1. 👥 Team Roles
 
 In this project, each member plays a key role in ensuring the success of the development process. Below is a brief description of each role and their responsibilities:
 
@@ -72,7 +72,7 @@ Focuses on protecting the application from vulnerabilities.
 
 💡 *Every role is interconnected. Clear communication and collaboration between team members are essential to delivering a high-quality product.*
 
-## 🛠️ Technology Stack
+## 2. 🛠️ Technology Stack
 
 This project is built using a modern and efficient technology stack. Each component plays a specific role in delivering a robust, scalable, and maintainable application.
 
@@ -143,4 +143,148 @@ Version control and collaboration tools.
 ---
 
 💡 *This tech stack is designed to be modular, scalable, and developer-friendly, ensuring smooth development and future maintainability.*
+
+
+## 📋 3. Feature Breakdown
+
+### 👥 User Management
+Users can register, log in, and manage their profiles. This includes updating personal details and viewing their activity (e.g., bookings and properties).
+
+### 🏡 Property Management
+Hosts can list new properties, including uploading images, descriptions, amenities, and pricing. They can also manage existing listings.
+
+### 📆 Booking System
+Users can book available properties for selected dates. The system prevents overlapping bookings and manages availability accordingly.
+
+### 💳 Payment Integration
+Secure payment processing is implemented to handle booking fees. It ensures that transactions are validated and recorded.
+
+### ⭐ Review System
+Guests can leave reviews and ratings for properties they've stayed in. Hosts can also view and manage feedback.
+
+---
+
+## 🗃️ 4. Database Design
+
+### Entities & Fields
+
+#### 👤 Users
+- `id`: unique identifier
+- `name`: user's full name
+- `email`: unique email address
+- `password`: hashed password
+- `role`: guest or host
+
+#### 🏘️ Properties
+- `id`: unique identifier
+- `title`: name of the property
+- `description`: property details
+- `location`: address or coordinates
+- `host_id`: reference to the user who listed it
+
+#### 📅 Bookings
+- `id`: unique identifier
+- `property_id`: reference to the booked property
+- `user_id`: reference to the guest
+- `check_in`: start date
+- `check_out`: end date
+
+#### 💳 Payments
+- `id`: unique identifier
+- `booking_id`: linked to the booking
+- `amount`: total amount paid
+- `status`: pending, completed, failed
+- `payment_method`: credit card, PayPal, etc.
+
+#### 🌟 Reviews
+- `id`: unique identifier
+- `user_id`: who wrote the review
+- `property_id`: the reviewed property
+- `rating`: stars (1-5)
+- `comment`: written feedback
+
+### Entity Relationships
+- A **user** can have multiple **properties** (as a host).
+- A **user** can make multiple **bookings** (as a guest).
+- A **property** can have many **bookings** and **reviews**.
+- A **booking** is linked to one **payment**.
+
+---
+
+---
+
+## 5. 📡 API Endpoints
+
+### 👤 Users
+| Method | Endpoint              | Description               |
+|--------|-----------------------|---------------------------|
+| GET    | `/users/`             | List all users            |
+| POST   | `/users/`             | Create a new user         |
+| GET    | `/users/{user_id}/`   | Retrieve a specific user  |
+| PUT    | `/users/{user_id}/`   | Update a specific user    |
+| DELETE | `/users/{user_id}/`   | Delete a specific user    |
+
+### 🏡 Properties
+| Method | Endpoint                    | Description                  |
+|--------|-----------------------------|------------------------------|
+| GET    | `/properties/`              | List all properties          |
+| POST   | `/properties/`              | Create a new property        |
+| GET    | `/properties/{property_id}/`| Retrieve a specific property |
+| PUT    | `/properties/{property_id}/`| Update a specific property   |
+| DELETE | `/properties/{property_id}/`| Delete a specific property   |
+
+### 📆 Bookings
+| Method | Endpoint                  | Description                |
+|--------|---------------------------|----------------------------|
+| GET    | `/bookings/`              | List all bookings          |
+| POST   | `/bookings/`              | Create a new booking       |
+| GET    | `/bookings/{booking_id}/` | Retrieve a specific booking|
+| PUT    | `/bookings/{booking_id}/` | Update a specific booking  |
+| DELETE | `/bookings/{booking_id}/` | Delete a specific booking  |
+
+### 💳 Payments
+| Method | Endpoint       | Description         |
+|--------|----------------|---------------------|
+| POST   | `/payments/`   | Process a payment   |
+
+### ⭐ Reviews
+| Method | Endpoint                  | Description                |
+|--------|---------------------------|----------------------------|
+| GET    | `/reviews/`               | List all reviews           |
+| POST   | `/reviews/`               | Create a new review        |
+| GET    | `/reviews/{review_id}/`   | Retrieve a specific review |
+| PUT    | `/reviews/{review_id}/`   | Update a specific review   |
+| DELETE | `/reviews/{review_id}/`   | Delete a specific review   |
+
+
+## 🔐 6. API Security
+
+### Key Measures
+- **Authentication**: Implemented using JWT to verify users and protect endpoints.
+- **Authorization**: Role-based access to restrict operations (e.g., only hosts can list properties).
+- **Rate Limiting**: Protects APIs from abuse by limiting requests per user/IP.
+
+### Why Security Matters
+- **User Data Protection**: Sensitive information like emails and passwords must be secured.
+- **Transaction Safety**: Payments and booking details need encryption and secure validation.
+- **System Integrity**: Prevents unauthorized actions and malicious attacks on endpoints.
+
+---
+
+## 🚀 7. CI/CD Pipeline
+
+### What is CI/CD?
+CI/CD (Continuous Integration / Continuous Deployment) automates the process of testing and deploying code. Every change goes through build, test, and deployment stages without manual intervention.
+
+### Tools Used
+- **GitHub Actions**: Automates testing, linting, and deployment pipelines.
+- **Docker**: Packages the app into containers for consistency across environments.
+- **Heroku / Vercel / AWS**: Used for hosting and deploying the application.
+
+---
+
+✅ **Manual Review**
+All content added has been pushed and committed to the [airbnb-clone-project](https://github.com/baye94/airbnb-clone-project) repository under the `README.md` file.
+
+
 
